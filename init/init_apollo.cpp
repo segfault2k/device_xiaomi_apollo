@@ -87,7 +87,7 @@ void vendor_load_properties() {
     std::string product = GetProperty("ro.boot.product.hardware.sku", "");
 
     property_override("ro.product.brand", "Xiaomi");
-    property_override("ro.product.model", "M2007J3SG");
+    property_override("ro.product.model", "M2007J3SY");
     property_override("ro.product.device", "apollo");
     property_override("ro.oem_unlock_supported", "0");
     if (product.find("std") != std::string::npos) {
