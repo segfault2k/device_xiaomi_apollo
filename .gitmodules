@@ -1,0 +1,3 @@
+[submodule "bootctrl"]
+	path = bootctrl
+	url = https://github.com/LineageOS/android_hardware_qcom_bootctrl
