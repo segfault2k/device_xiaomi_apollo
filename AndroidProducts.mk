@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_apollo.mk
+    $(LOCAL_DIR)/corvus_apollo.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_apollo-user \
-    fluid_apollo-userdebug \
-    fluid_apollo-eng
+    corvus_apollo-user \
+    corvus_apollo-userdebug \
+    corvus_apollo-eng

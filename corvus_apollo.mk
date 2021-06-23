@@ -11,21 +11,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
-# Inherit some common Fluid stuff.
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+# Inherit some common Corvus-OS stuff.
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
-PRODUCT_NAME := fluid_apollo
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.corvus.maintainer=segfault
+
+
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1440
+
+PRODUCT_NAME := corvus_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Mi 10T
+PRODUCT_MODEL := Mi 10T
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-IS_PHONE := true
-TARGET_INCLUDE_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-FLUID_BUILD_TYPE := OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=Ramisky \
-  ro.fluid.cpu=SDM865
