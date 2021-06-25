@@ -22,9 +22,8 @@ USE_GAPPS := true
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.corvus.maintainer=segfault
 
-
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BOOT_ANIMATION_RES := 1440
+scr_resolution := 1080
 
 PRODUCT_NAME := corvus_apollo
 PRODUCT_DEVICE := apollo
