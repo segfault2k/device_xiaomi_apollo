@@ -18,9 +18,14 @@ $(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 USE_GAPPS := true
 
+#Official
+RAVEN_LAIR := Official
+
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.corvus.maintainer=segfault
+CORVUS_MAINTAINER := segfault
+
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 scr_resolution := 1080
