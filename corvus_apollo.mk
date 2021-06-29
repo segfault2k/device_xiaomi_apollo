@@ -18,6 +18,9 @@ $(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 USE_GAPPS := true
 
+#Pixel offline charge animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 #Official
 RAVEN_LAIR := Official
 
