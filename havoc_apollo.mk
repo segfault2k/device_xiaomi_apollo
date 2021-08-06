@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The ArrowOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,16 +11,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common HavocOS stuff.
+$(call inherit-product, vendor/havoc/config/common.mk)
+
+# Havoc Bringup
+HAVOC_BUILD_TYPE := Official
+HAVOC_MAINTAINER := sewa2k
+HAVOC_GROUP_URL := https://t.me/HavocOS_apollo
 
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
-DEVICE_MAINTAINER := Dobsgw
+
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
-PRODUCT_NAME := arrow_apollo
+PRODUCT_NAME := havoc_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
