@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_apollo.mk
+    $(LOCAL_DIR)/octavi_apollo.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_apollo-user \
-    arrow_apollo-userdebug \
-    arrow_apollo-eng
+    octavi_apollo-user \
+    octavi_apollo-userdebug \
+    octavi_apollo-eng
