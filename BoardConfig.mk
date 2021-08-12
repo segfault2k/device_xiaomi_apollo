@@ -12,6 +12,7 @@ include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 BUILD_BROKEN_DUP_RULES := true
 
 # Display
+TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_SCREEN_DENSITY := 440
 
 # Init
