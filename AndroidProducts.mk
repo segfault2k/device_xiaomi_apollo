@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_apollo.mk
+    $(LOCAL_DIR)/dot_apollo.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_apollo-user \
-    havoc_apollo-userdebug \
-    havoc_apollo-eng
+    dot_apollo-user \
+    dot_apollo-userdebug \
+    dot_apollo-eng
