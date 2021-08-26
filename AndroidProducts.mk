@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_apollo.mk
+    $(LOCAL_DIR)/syberia_apollo.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_apollo-user \
-    cherish_apollo-userdebug \
-    cherish_apollo-eng
+    syberia_apollo-user \
+    syberia_apollo-userdebug \
+    syberia_apollo-eng
