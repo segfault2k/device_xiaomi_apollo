@@ -20,6 +20,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GMS := true
 USE_LAWNCHAIR := true
 
+#CherishOS Stuff
+CHERISH_BUILD_TYPE := OFFICIAL
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.cherish.maintainer=sewa2k
+
 #Blur
 TARGET_USES_BLUR := true
 
@@ -30,6 +35,3 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi Mi 10T
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_GENERIC_PROPERTIES += \
-    ro.cherish.maintainer=sewa2k
