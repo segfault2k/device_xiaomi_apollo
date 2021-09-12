@@ -18,7 +18,6 @@ $(call inherit-product, device/xiaomi/apollo/device.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GMS := true
-USE_LAWNCHAIR := true
 
 #CherishOS Stuff
 CHERISH_BUILD_TYPE := OFFICIAL
